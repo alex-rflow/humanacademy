@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Дизайн человека</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
+  <link rel="stylesheet" type="text/css" href="css/imgareaselect-default.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+</head>
+<body>
+  <div id="user" class="brs">
+    <h1 style="color: #000" id="loading">Загрузка данных</h1>
+    <div id="b1">
+      <a href="" id="user_url" style="text-decoration: none"><h1 id="hd_type"></h1></a>
+      <input type="file" name="file" id="file" class="inputfile" />
+      <label for="file">Choose a file</label>
+      <div class="ava" style="float: left; position: relative; overflow: hidden; width: 130px; height: 130px;">
+        <img src="" alt="" id="ava">
+      </div>
+      <div id="type_show">
+        <p>Тип описания</p>
+        <select name="type" id="status">
+          <option value="0">Базовое описание</option>
+          <option value="1">Основное описание</option>
+          <option value="2">Расширенное описание</option>
+        </select>
+        <p>Что видит пользователь</p>
+        <select name="type_show" id="show_status">
+          <option value="0">Базовое описание</option>
+          <option value="1">Основное описание</option>
+          <option value="2">Расширенное описание</option>
+        </select>
+      </div>
+      <div id="t1">
+        <input type="text" id="name" placeholder="Имя и Фамилия">
+        <input type="text" id="clas" placeholder="Класс">
+        <input type="text" id="type" placeholder="Тип">
+      </div>
+      <h1>Основная информация</h1>
+      <textarea placeholder="Краткая характеристика" id="text"></textarea>
+      
+      <h2>Атрибуты</h2>
+      <ul id="attributes">
+        <li>
+          <p>Гибкость мышления</p>
+          <input type="text" id="a1" placeholder="%">
+        </li>
+        <li>
+          <p>Стабильность</p>
+          <input type="text" id="a2" placeholder="%">
+        </li>
+        <li>
+          <p>Здоровье</p>
+          <input type="text" id="a3" placeholder="%">
+        </li>
+        <li>
+          <p>Энергия</p>
+          <input type="text" id="a4" placeholder="%">
+        </li>
+        <li>
+          <p>Эмоциональность</p>
+          <input type="text" id="a5" placeholder="%">
+        </li>
+        <li>
+          <p>Воля</p>
+          <input type="text" id="a6" placeholder="%">
+        </li>
+        <li>
+          <p>Лидерство</p>
+          <input type="text" id="a7" placeholder="%">
+        </li>
+      </ul>
+      <h2>Способности / Ограничители</h2>
+      <ul id="you"></ul>
+      <button onclick="adda()">+</button>
+      <h2>Базовая характеристика</h2>
+      <textarea id="base"></textarea>
+      <h2>Мышление</h2>
+      <textarea id="thinking"></textarea>
+      <h2>Включи в свою деятельность</h2>
+      <textarea id="spheres_of_realization"></textarea>
+      <h2>Стратегия для реализации</h2>
+      <textarea id="strategy_for_implementation"></textarea>
+    </div>
+    <div id="b3">
+      <h1>Подробная информация по способностям и ограничителям</h1>
+      <div id="et">
+        <h2>Основные способности</h2>
+        <li id="et1">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et2">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Способности на которые опираются основные</h2>
+        <li id="et3">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et4">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Способности, которые нужно использовать для реализации основных</h2>
+        <h3>1. Способности, в которых нужно нарабатывать опыт</h3>
+        <li id="et5">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et6">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h3>2. Способности из прошлых жизней, которые можно уже использовать</h3>
+        <li id="et7">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et8">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Интеллектуальные способности и дополнительные умения</h2>
+        <li id="et9">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et10">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Способности, олицетворяющие твои ценности и убеждения</h2>
+        <li id="et11">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et12">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Способности, которые могут ограничить другие способности</h2>
+        <li id="et13">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et14">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Самые сильные способности, которые проявляются после преодоления ограничений</h2>
+        <li id="et15">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et16">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Способности которые нужно использовать, когда становится сложно</h2>
+        <li id="et17">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et18">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Способности, которые усилят реализацию предназначения</h2>
+        <li id="et19">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et20">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <h2>Дополнительные способности, которые нужно развивать перманентно во время реализации предназначения</h2>
+        <li id="et21">
+          <p>Сознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+        <li id="et22">
+          <p>Беcсознательная</p>
+          <input type="text" placeholder="Название" name="title">
+          <br>
+          <select name="act">
+            <option value="1" >Активирована всегда</option>
+            <option value="2" >Активирована не всегда</option>
+          </select>
+          <textarea placeholder="Неразвитое состояие" name="no" ></textarea>
+          <textarea placeholder="Развитое состояние" name="yes" ></textarea>
+          <textarea placeholder="Действия для перехода к развитому состоянию" name="action" ></textarea>
+          <textarea placeholder="Стадия развития" name="st"></textarea>
+        </li>
+      </div>
+      <div id="sin">
+        <h2>Синтезированные способности</h2>
+      </div>
+      <button onclick="addas()">+</button>
+      <h1>Механика физиологии организма</h1>
+      <div id="fisio">
+        <textarea id="f1">1.</textarea>
+        <textarea id="f2">2.</textarea>
+        <textarea id="f3">3.</textarea>
+        <textarea id="f4">4.</textarea>
+        <textarea id="f5">5.</textarea>
+        <textarea id="f6">6.</textarea>
+        <textarea id="f7">7.</textarea>
+        <textarea id="f8">8.</textarea>
+        <textarea id="f9">9.</textarea>
+      </div>
+    </div>
+    <div id="b2">
+      <h1>Элементы для увеличения продуктивности и эффективности</h1>
+      <h2>Питание</h2>
+      <textarea id="food"></textarea>
+      <h2>Активность</h2>
+      <textarea id="activity"></textarea>
+      <h2>Окружающая обстановка</h2>
+      <textarea id="environment"></textarea>
+      <h2>Изучение информации</h2>
+      <textarea id="learning_information"></textarea>
+      <h2>Отношения</h2>
+      <textarea id="attitudes"></textarea>
+      <h2>Генетическая травма</h2>
+      <textarea id="genetic_trauma"></textarea>
+      <h2>Сексуальная травма</h2>
+      <textarea id="sexual_trauma"></textarea>
+      <h2>Мотивация</h2>
+      <textarea id="motivation"></textarea>
+    </div>
+  </div>
+  <div class="cedit dn"></div>
+  <img id="photo" alt="" title="" class="dn" style="margin: 0 0 0 10px;" />
+  
+  
+</body>
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.imgareaselect.pack.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
+<script src="js/md5.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104636303-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104636303-2');
+</script>
+
+</html>

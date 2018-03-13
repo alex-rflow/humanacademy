@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+@font-face {
+  font-family: "GothaProReg";
+  src: url("../fonts/GothaProReg.otf"); }
+
+@font-face {
+  font-family: "GothaProLig";
+  src: url("../fonts/GothaProLig.otf"); }
+
+@font-face {
+  font-family: "GothaProBol";
+  src: url("../fonts/GothaProBol.otf"); }
+
+@font-face {
+  font-family: "GothaProIta";
+  src: url("../fonts/GothaProIta.otf"); }
+
+@font-face {
+  font-family: "GothaProMed";
+  src: url("../fonts/GothaProMed.otf"); }
+
+body {
+  font-family: 'GothaProLig', sans-serif;
+  background: #f1f1f1; }
+
+p {
+  line-height: 50px;
+  padding-left: 60px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  float: left; }
+
+li {
+  list-style: none;
+  height: 100px;
+  padding-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+#user {
+  width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  background: #fff;
+  padding: 65px;
+  margin-left: -440px; }
+
+h1 {
+  text-align: left;
+  width: 840px;
+  padding: 20px 0px;
+  margin-left: -65px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px; }

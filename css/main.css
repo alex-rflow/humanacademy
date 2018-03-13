@@ -1,0 +1,248 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+@font-face {
+  font-family: "GothaProReg";
+  src: url("../fonts/GothaProReg.otf"); }
+
+@font-face {
+  font-family: "GothaProLig";
+  src: url("../fonts/GothaProLig.otf"); }
+
+@font-face {
+  font-family: "GothaProBol";
+  src: url("../fonts/GothaProBol.otf"); }
+
+@font-face {
+  font-family: "GothaProMed";
+  src: url("../fonts/GothaProMed.otf"); }
+
+body {
+  font-family: 'GothaProReg', sans-serif;
+  background: #f1f1f1;
+    background-padding: 10px 0px; }
+
+p {
+  font-family: 'GothaProLig', sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.5px; }
+  .t3 p {
+    padding-bottom: 20px; }
+
+b {
+  font-family: 'GothaProBol', sans-serif; }
+
+strong {
+  font-family: 'GothaProBol', sans-serif; }
+
+img.bbcode_img {
+  padding: 10px 0px;
+  max-width: 100%; }
+
+.t1, .t2, .t3, .ts {
+  display: none; }
+
+.bg {
+  position: absolute;
+  width: 100%; }
+
+.ava {
+  width: 130px;
+  height: 130px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  float: left;
+  margin: 20px;
+  margin-right: 30px;
+  margin-top: -15px; }
+
+.brs {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.06); }
+
+#user {
+  width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  background: #fff;
+  padding: 65px;
+  margin-left: -440px;
+  color: #262626; }
+
+.b1 {
+  height: 100px;
+  width: 470px;
+  margin: 0 auto;
+  margin-bottom: 80px; }
+  .b1 p {
+    font-family: 'GothaProReg', sans-serif;
+    font-size: 20px;
+    padding-top: 10px; }
+  .b1 h2 {
+    padding-top: 0px; }
+
+h1 {
+  text-align: left;
+  width: 840px;
+  padding: 20px 0px;
+  margin-left: -65px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px; }
+  h1.main {
+    background: #00c853 url("../img/b1.png");
+    line-height: 70px; }
+  h1.dfoaac {
+    background: #dd2c00 url("../img/b4.png"); }
+  h1.elements {
+    background: #aeea00 url("../img/b2.png"); }
+  h1.mec {
+    background: #304ffe url("../img/b3.png");
+    line-height: 70px; }
+
+h2 {
+  margin: 25px 0px;
+  font-weight: 100;
+  padding-top: 10px;
+  margin-bottom: 15px; }
+
+li {
+  list-style: none;
+  margin: 10px 0px; }
+
+#attributes p {
+  margin-bottom: 10px;
+  font-size: 18px; }
+
+#attributes .progress {
+  width: 690px;
+  height: 15px; }
+
+#attributes .show {
+  height: 20px;
+  -webkit-border-radius: 1em;
+          border-radius: 1em;
+  margin-right: 10px;
+  min-width: 20px;
+  float: left;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+#attributes .p1 {
+  background: #ba68c8; }
+
+#attributes .p2 {
+  background: #4dd0e1; }
+
+#attributes .p3 {
+  background: #e88484; }
+
+#attributes .p4 {
+  background: #ffb74d; }
+
+#attributes .p5 {
+  background: #aed581; }
+
+#attributes .p6 {
+  background: #90a4ae; }
+
+#attributes .p7 {
+  background: #fdd835; }
+
+#attributes .proc {
+  line-height: 20px;
+  margin-top: -14px; }
+
+.reg {
+  font-family: 'GothaProReg', sans-serif; }
+
+.t3 ul {
+  padding-left: 20px; }
+
+.t3 .active-1, .t3 .active-2 {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: url(../img/active.png);
+  margin: -3px 10px 0px 0px;
+  padding: 0px !important;
+  -webkit-background-size: cover !important;
+          background-size: cover !important; }
+
+.t3 .active-2 {
+  background: url(../img/no-active.png); }
+
+.t3 .abilities .title {
+  padding-bottom: 40px; }
+  .t3 .abilities .title p {
+    font-family: 'GothaProMed', sans-serif;
+    margin-top: -1px;
+    padding-bottom: 0px; }
+
+.t3 .abilities .title p, .t3 .abilities .title b, .t3 .abilities .title .active-1, .t3 .abilities .title .active-2 {
+  float: left;
+  padding-right: 5px; }
+
+.t3 h2 {
+  margin-bottom: 45px; }
+
+.t3 #sin h3 {
+  margin: 20px 0px;
+  font-size: 20px; }
+
+.edit {
+  float: right;
+  margin-left: 15px; }
+
+@media (max-width: 1050px) {
+  #user {
+    width: 90%;
+    background: #fff;
+    padding: 5%;
+    margin-left: 0px;
+    color: #262626;
+    position: inherit;
+    font-size: 15px; }
+    #user h1 {
+      text-align: left;
+      width: 101.5%;
+      padding: 10px 5%;
+      text-align: center;
+      color: #fff;
+      margin-top: 50px;
+      margin-left: -6%;
+      margin-bottom: 50px;
+      font-size: 1.5em; }
+    #user #attributes .progress {
+      width: 80%; }
+    #user .b1 {
+      height: auto;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center; }
+      #user .b1 img {
+        float: none;
+        margin-top: 30px; }
+      #user .b1 p {
+        font-size: 16px; } }
+
+.icon {
+  float: left;
+  height: 35px;
+  margin-left: -50px;
+  margin-top: -46px; }
+
+.fb-share-button.fb_iframe_widget {
+  float: left;
+  margin: 10px; }
+
+#tests {
+  padding-top: 10px; }
